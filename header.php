@@ -56,7 +56,10 @@
         <!-- /.container -->
     </nav>
 	
-	<?php cleanblog_header(); ?>
+	<?php //cleanblog_header(); ?>
+	<header class="intro-header" style="background-color: #404040;">
+		<?php if (dynamic_sidebar('top-mapa')); {  } ?>
+    	</header>
 
     <!-- Main Content -->
     <div class="container">
