@@ -15,7 +15,10 @@ get_header(); ?>
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
-
+			<div class="post-heading">
+                        	<h1><?php the_title(); ?></h1>
+			        <span class="meta"><i>Escrito por: <?php the_author(); ?></i></span>
+                    	</div>
 			<?php get_template_part( 'template-parts/content', 'single' ); ?>
 			
 			<div class="postfooter">

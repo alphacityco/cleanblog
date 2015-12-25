@@ -39,6 +39,11 @@
 	<!-- /footer -->
 
 <?php wp_footer(); ?>
-
+<script>
+ $=jQuery;
+  $(document).ready(function(){
+    $("#sticker").sticky({topSpacing:0});
+  });
+</script>
 </body>
 </html>
